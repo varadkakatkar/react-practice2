@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+#heading {
+  color: green;
+  font-weight: bold;
+  text-decoration: dotted;
+  margin-top: 10px;
+  border: 1px solid green;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cat1",
+    "category": "Burgers",
+    "items": ["Classic Cheeseburger", "Spicy Zinger", "Mushroom Swiss"]
+  },
+  {
+    "id": "cat2",
+    "category": "Drinks",
+    "items": ["Iced Americano", "Mango Smoothie", "Classic Cola"]
+  },
+  {
+    "id": "cat3",
+    "category": "Desserts",
+    "items": ["Chocolate Lava Cake", "New York Cheesecake"]
+  }
+]
