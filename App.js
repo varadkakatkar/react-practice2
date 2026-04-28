@@ -9,8 +9,8 @@ import MemoAndUseMemoDemo from "./MemoAndUseMemo";
 import UseMemoOnlyDemo from "./UseMemoOnly";
 import UseCallBackOnlyDemo from "./UseCallBackOnly";
 import HOCUsed from "./HOC/HOCUsed";
-import RestaurantMenu from "./LiftingStateUp/RestaurantMenu";
-import ShoppingCart from "./LiftingStateUp/SHoppingCart";
+import RestaurantMenu from "./LiftingStateUp/RestaurantMenus/RestaurantMenu";
+import ShoppingCart from "./LiftingStateUp/ShoppingCart/ShoppingCart";
 
 const App = () => {
   return (
