@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement("h1", { id: "heading" }, "Hello World "); // react element retuns object
+const heading = React.createElement("h1", { id: "heading" }, "Hello World "); // react element returns object
 const span = <span>REACT ELEMENT SPAN </span>;
 const jsxHeadingElement = (
   <h1 id="heading">
-    This is JSX heading 🚀 adding JSX Element inside anathor element {span}
+    This is JSX heading 🚀 adding JSX Element inside another element {span}
   </h1>
 ); // JSX element
 console.log("jsxHeading ", jsxHeadingElement);
@@ -26,8 +26,8 @@ const HeadingComponent = () => {
     <>
       Any javascript {2 + 2}
       <br />
-     Function call {JSXHeading()}
-      <JSXHeading > </JSXHeading >
+      Function call {JSXHeading()}
+      <JSXHeading> </JSXHeading>
       <JSXHeading />
       Adding element <span>{jsxHeadingElement} inside component </span>
       <h1>HeadingComponent ................</h1>

@@ -11,6 +11,13 @@ import UseCallBackOnlyDemo from "./UseCallBackOnly";
 import HOCUsed from "./HOC/HOCUsed";
 import RestaurantMenu from "./LiftingStateUp/RestaurantMenus/RestaurantMenu";
 import ShoppingCart from "./LiftingStateUp/ShoppingCart/ShoppingCart";
+import Greeting from "./InterviewProblems/Greeting";
+import TogglePassword from "./InterviewProblems/TogglePassword";
+import EvenOrOddChecker from "./InterviewProblems/EvenOrOddCheck";
+import ProgressBar from "./InterviewProblems/ProgressBar";
+import Navbar from "./InterviewProblems/Context/NavBar";
+import Dashboard from "./InterviewProblems/Context/Dashboard";
+import { UserProvider } from "./InterviewProblems/Context/userContext";
 
 const App = () => {
   return (
@@ -23,7 +30,18 @@ const App = () => {
       {/* {<UseCallBackOnlyDemo />} */}
       {/* <HOCUsed /> */}
       {/*   <RestaurantMenu /> */} {/* Lifting State Up */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
+      {/** Interview Practice */}
+      {/* <Greeting /> */}
+      {/* <TogglePassword /> */}
+      {/* <EvenOrOddChecker /> */}
+      {/* <ProgressBar /> */}
+      <UserProvider>
+        <div className="app">
+          <Navbar />
+          <Dashboard />
+        </div>
+      </UserProvider>
     </div>
   );
 };
