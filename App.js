@@ -18,6 +18,10 @@ import ProgressBar from "./InterviewProblems/ProgressBar";
 import Navbar from "./InterviewProblems/Context/NavBar";
 import Dashboard from "./InterviewProblems/Context/Dashboard";
 import { UserProvider } from "./InterviewProblems/Context/userContext";
+import AutoSaveInput from "./InterviewProblems/AutoSaveInput";
+import AcronymGenerator from "./InterviewProblems/AcronymGenerator";
+import ColorExplorer from "./InterviewProblems/ColorExplorer";
+import ConfirmationModal from "./InterviewProblems/ConfirmationModal";
 
 const App = () => {
   return (
@@ -36,12 +40,16 @@ const App = () => {
       {/* <TogglePassword /> */}
       {/* <EvenOrOddChecker /> */}
       {/* <ProgressBar /> */}
-      <UserProvider>
+      {/* <UserProvider>
         <div className="app">
           <Navbar />
           <Dashboard />
         </div>
-      </UserProvider>
+      </UserProvider> */}
+      {/* <AutoSaveInput /> */}
+      {/* <AcronymGenerator /> */}
+      {/* <ColorExplorer /> */}
+      <ConfirmationModal />
     </div>
   );
 };
