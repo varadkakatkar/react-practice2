@@ -23,6 +23,7 @@ import AcronymGenerator from "./InterviewProblems/AcronymGenerator";
 import ColorExplorer from "./InterviewProblems/ColorExplorer";
 import ConfirmationModal from "./InterviewProblems/ConfirmationModal";
 import CharacterCount from "./InterviewProblems/CharacterCount";
+import AgeCalculator from "./InterviewProblems/AgeCalculate";
 
 const App = () => {
   return (
@@ -51,7 +52,8 @@ const App = () => {
       {/* <AcronymGenerator /> */}
       {/* <ColorExplorer /> */}
       {/* <ConfirmationModal /> */}
-      <CharacterCount />
+      {/* <CharacterCount /> */}
+      <AgeCalculator />
     </div>
   );
 };
