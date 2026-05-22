@@ -22,6 +22,7 @@ import AutoSaveInput from "./InterviewProblems/AutoSaveInput";
 import AcronymGenerator from "./InterviewProblems/AcronymGenerator";
 import ColorExplorer from "./InterviewProblems/ColorExplorer";
 import ConfirmationModal from "./InterviewProblems/ConfirmationModal";
+import CharacterCount from "./InterviewProblems/CharacterCount";
 
 const App = () => {
   return (
@@ -49,7 +50,8 @@ const App = () => {
       {/* <AutoSaveInput /> */}
       {/* <AcronymGenerator /> */}
       {/* <ColorExplorer /> */}
-      <ConfirmationModal />
+      {/* <ConfirmationModal /> */}
+      <CharacterCount />
     </div>
   );
 };
