@@ -24,6 +24,8 @@ import ColorExplorer from "./InterviewProblems/ColorExplorer";
 import ConfirmationModal from "./InterviewProblems/ConfirmationModal";
 import CharacterCount from "./InterviewProblems/CharacterCount";
 import AgeCalculator from "./InterviewProblems/AgeCalculate";
+import Counter from "./InterviewProblems/customHooks/Counter";
+import GuessTheNumber from "./InterviewProblems/GuessTheNumber";
 
 const App = () => {
   return (
@@ -53,7 +55,9 @@ const App = () => {
       {/* <ColorExplorer /> */}
       {/* <ConfirmationModal /> */}
       {/* <CharacterCount /> */}
-      <AgeCalculator />
+      {/* <AgeCalculator /> */}
+      {/* <Counter /> */}
+      <GuessTheNumber />
     </div>
   );
 };

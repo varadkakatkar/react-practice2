@@ -1,0 +1,128 @@
+.counter {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.counter *,
+.counter *::before,
+.counter *::after {
+  box-sizing: border-box;
+}
+
+.counter__card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  text-align: center;
+}
+
+.counter__title {
+  margin: 0 0 24px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.counter__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.counter__stat {
+  margin: 0;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.counter__stat-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.counter__stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+.counter__stat-value--previous {
+  color: #94a3b8;
+}
+
+.counter__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.counter__btn {
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.counter__btn:hover {
+  transform: translateY(-1px);
+}
+
+.counter__btn:active {
+  transform: translateY(0);
+}
+
+.counter__btn--decrement {
+  color: #ffffff;
+  background: linear-gradient(135deg, #f87171, #dc2626);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.counter__btn--decrement:hover {
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4);
+}
+
+.counter__btn--reset {
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.counter__btn--reset:hover {
+  background: #e2e8f0;
+}
+
+.counter__btn--increment {
+  color: #ffffff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.35);
+}
+
+.counter__btn--increment:hover {
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.45);
+}
