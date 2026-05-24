@@ -1,0 +1,190 @@
+.leap-year {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.leap-year *,
+.leap-year *::before,
+.leap-year *::after {
+  box-sizing: border-box;
+}
+
+.leap-year__card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  text-align: center;
+}
+
+.leap-year__icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.leap-year__title {
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.leap-year__subtitle {
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.leap-year__label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+  text-align: left;
+}
+
+.leap-year__input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leap-year__input::placeholder {
+  color: #94a3b8;
+}
+
+.leap-year__input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+  background: #ffffff;
+}
+
+.leap-year__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.leap-year__btn {
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.leap-year__btn:hover {
+  transform: translateY(-1px);
+}
+
+.leap-year__btn:active {
+  transform: translateY(0);
+}
+
+.leap-year__btn--primary {
+  color: #ffffff;
+  background: linear-gradient(135deg, #0d9488, #0891b2);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.35);
+}
+
+.leap-year__btn--primary:hover {
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.45);
+}
+
+.leap-year__btn--secondary {
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.leap-year__btn--secondary:hover {
+  background: #e2e8f0;
+}
+
+.leap-year__result {
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leap-year__result--leap {
+  color: #0f766e;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+}
+
+.leap-year__result--common {
+  color: #475569;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.leap-year__error {
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+}
+
+.leap-year__rules {
+  padding: 16px 18px;
+  text-align: left;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.leap-year__rules-title {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.leap-year__rules-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.leap-year__rules-list li::marker {
+  color: #0d9488;
+}

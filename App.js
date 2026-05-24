@@ -26,6 +26,7 @@ import CharacterCount from "./InterviewProblems/CharacterCount";
 import AgeCalculator from "./InterviewProblems/AgeCalculate";
 import Counter from "./InterviewProblems/customHooks/Counter";
 import GuessTheNumber from "./InterviewProblems/GuessTheNumber";
+import LeapYear from "./InterviewProblems/LeapYear";
 
 const App = () => {
   return (
@@ -57,7 +58,8 @@ const App = () => {
       {/* <CharacterCount /> */}
       {/* <AgeCalculator /> */}
       {/* <Counter /> */}
-      <GuessTheNumber />
+      {/* <GuessTheNumber /> */}
+      <LeapYear />
     </div>
   );
 };
