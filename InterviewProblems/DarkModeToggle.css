@@ -1,0 +1,88 @@
+.dark-mode-toggle {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.dark-mode-toggle *,
+.dark-mode-toggle *::before,
+.dark-mode-toggle *::after {
+  box-sizing: border-box;
+}
+
+.dark-mode-toggle--light {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.dark-mode-toggle--dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode-toggle__title {
+  margin: 0 0 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dark-mode-toggle__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dark-mode-toggle__label {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.dark-mode-toggle__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.dark-mode-toggle__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode-toggle__slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #cccccc;
+  border-radius: 34px;
+  transition: background-color 0.4s ease;
+}
+
+.dark-mode-toggle__slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+
+.dark-mode-toggle__switch input:checked + .dark-mode-toggle__slider {
+  background-color: #4caf50;
+}
+
+.dark-mode-toggle__switch input:checked + .dark-mode-toggle__slider::before {
+  transform: translateX(26px);
+}

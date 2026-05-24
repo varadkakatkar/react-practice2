@@ -27,6 +27,8 @@ import AgeCalculator from "./InterviewProblems/AgeCalculate";
 import Counter from "./InterviewProblems/customHooks/Counter";
 import GuessTheNumber from "./InterviewProblems/GuessTheNumber";
 import LeapYear from "./InterviewProblems/LeapYear";
+import DarkModeToggle from "./InterviewProblems/DarkModeToggle";
+import InputFocus from "./InterviewProblems/InputFocus";
 
 const App = () => {
   return (
@@ -59,7 +61,9 @@ const App = () => {
       {/* <AgeCalculator /> */}
       {/* <Counter /> */}
       {/* <GuessTheNumber /> */}
-      <LeapYear />
+      {/* <LeapYear /> */}
+      {/* <DarkModeToggle /> */}
+      <InputFocus />
     </div>
   );
 };
