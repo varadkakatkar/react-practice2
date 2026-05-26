@@ -29,6 +29,7 @@ import GuessTheNumber from "./InterviewProblems/GuessTheNumber";
 import LeapYear from "./InterviewProblems/LeapYear";
 import DarkModeToggle from "./InterviewProblems/DarkModeToggle";
 import InputFocus from "./InterviewProblems/InputFocus";
+import TodoList from "./InterviewProblems/TodoList";
 
 const App = () => {
   return (
@@ -63,7 +64,8 @@ const App = () => {
       {/* <GuessTheNumber /> */}
       {/* <LeapYear /> */}
       {/* <DarkModeToggle /> */}
-      <InputFocus />
+      {/* <InputFocus /> */}
+      <TodoList />
     </div>
   );
 };
