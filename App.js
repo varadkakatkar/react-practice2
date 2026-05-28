@@ -30,6 +30,8 @@ import LeapYear from "./InterviewProblems/LeapYear";
 import DarkModeToggle from "./InterviewProblems/DarkModeToggle";
 import InputFocus from "./InterviewProblems/InputFocus";
 import TodoList from "./InterviewProblems/TodoList";
+import SumReduce from "./InterviewProblems/SumReduce";
+import GetWeekday from "./InterviewProblems/GetWeekday";
 
 const App = () => {
   return (
@@ -65,7 +67,9 @@ const App = () => {
       {/* <LeapYear /> */}
       {/* <DarkModeToggle /> */}
       {/* <InputFocus /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      {/* <SumReduce /> */}
+      <GetWeekday />
     </div>
   );
 };
