@@ -32,6 +32,7 @@ import InputFocus from "./InterviewProblems/InputFocus";
 import TodoList from "./InterviewProblems/TodoList";
 import SumReduce from "./InterviewProblems/SumReduce";
 import GetWeekday from "./InterviewProblems/GetWeekday";
+import ContactForm from "./InterviewProblems/ContactForm";
 
 const App = () => {
   return (
@@ -69,7 +70,8 @@ const App = () => {
       {/* <InputFocus /> */}
       {/* <TodoList /> */}
       {/* <SumReduce /> */}
-      <GetWeekday />
+      {/* <GetWeekday /> */}
+      <ContactForm />
     </div>
   );
 };
