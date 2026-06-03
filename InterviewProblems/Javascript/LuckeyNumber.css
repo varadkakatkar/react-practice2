@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.lucky-app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: "Poppins", system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.lucky-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  animation: cardEnter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.lucky-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lucky-subtitle {
+  margin: 10px 0 28px;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 1.15rem;
+  font-family: inherit;
+  font-weight: 600;
+  color: #374151;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.input-box::placeholder {
+  color: #b9c0cc;
+  font-weight: 400;
+}
+
+.input-box:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 4px rgba(118, 75, 162, 0.15);
+  transform: translateY(-2px);
+}
+
+/* hide number input spinners for a cleaner look */
+.input-box::-webkit-outer-spin-button,
+.input-box::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.result {
+  margin: 0;
+  min-height: 1.6rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: color 0.25s ease;
+}
+
+.result--lucky {
+  color: #16a34a;
+  animation: pop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.result--unlucky {
+  color: #dc2626;
+  animation: pop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.result--lucky::before {
+  content: "✨ ";
+}
+
+.result--unlucky::before {
+  content: "🚫 ";
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

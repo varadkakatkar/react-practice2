@@ -33,6 +33,7 @@ import TodoList from "./InterviewProblems/TodoList";
 import SumReduce from "./InterviewProblems/SumReduce";
 import GetWeekday from "./InterviewProblems/GetWeekday";
 import ContactForm from "./InterviewProblems/ContactForm";
+import LuckyNumber from "./InterviewProblems/Javascript/LuckeyNumber";
 
 const App = () => {
   return (
@@ -71,7 +72,8 @@ const App = () => {
       {/* <TodoList /> */}
       {/* <SumReduce /> */}
       {/* <GetWeekday /> */}
-      <ContactForm />
+      {/* <ContactForm /> */}
+      <LuckyNumber />
     </div>
   );
 };
