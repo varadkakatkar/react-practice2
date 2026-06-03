@@ -34,6 +34,7 @@ import SumReduce from "./InterviewProblems/SumReduce";
 import GetWeekday from "./InterviewProblems/GetWeekday";
 import ContactForm from "./InterviewProblems/ContactForm";
 import LuckyNumber from "./InterviewProblems/Javascript/LuckeyNumber";
+import QueenCheckGame from "./InterviewProblems/QueenCheckGame";
 
 const App = () => {
   return (
@@ -73,7 +74,8 @@ const App = () => {
       {/* <SumReduce /> */}
       {/* <GetWeekday /> */}
       {/* <ContactForm /> */}
-      <LuckyNumber />
+      {/* <LuckyNumber /> */}
+      <QueenCheckGame />
     </div>
   );
 };
